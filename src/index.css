@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-accent: "Pacifico", cursive;
+
+  --color-brand-pink: #ffb7c5;
+  --color-brand-hotpink: #ff69b4;
+  --color-brand-soft: #fff0f5;
+  --color-brand-accent: #ff85a2;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-soft text-gray-800 antialiased;
+  }
+}
+
+.pink-gradient {
+  background: linear-gradient(135deg, #ffb7c5 0%, #ff85a2 100%);
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/30;
+}
+
